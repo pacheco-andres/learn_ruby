@@ -1,7 +1,5 @@
 class Persona
-  attr_accessor :nombre 
-  attr_accessor :edad
-  attr_accessor :dni
+  attr_reader :nombre, :edad, :dni  # en esta parte estoy utilizando el metodo de lectura de los metos accesores
 
   def initialize(nombre, edad, dni)
     @nombre = nombre
@@ -10,12 +8,12 @@ class Persona
   end
 
   def mostrar
-    datos = "El nombre de la persona es: #{@nombre}, su edad es: #{@edad} y su identificcion es: #{@dni}"
+    datos = "El nombre de la persona es: #{nombre}, su edad es: #{edad} y su identificcion es: #{dni}"
     puts datos
   end
 
   def mayor_de_edad?
-    @edad >= 18 && @edad < 50
+    edad >= 18 && edad < 50
   end
 end
 
