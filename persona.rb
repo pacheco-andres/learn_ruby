@@ -8,16 +8,15 @@ class Persona
   end
 
   def mostrar
-    datos = "El nombre de la persona es: #{nombre}, su edad es: #{edad} y su identificcion es: #{dni}"
-    puts datos
+    "El nombre de la persona es: #{nombre}, su edad es: #{edad} y su identificcion es: #{dni}"
   end
 
   def mayor_de_edad?
-    edad >= 18 && edad < 50
+    edad >= 18
   end
 end
 
-persona = Persona.new("andres", 51, 123456)
+#persona = Persona.new("andres", 17, 123456)
 
-puts persona.mostrar
-puts persona.mayor_de_edad?
+#puts persona.mostrar
+#puts persona.mayor_de_edad?
