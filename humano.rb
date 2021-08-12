@@ -1,6 +1,6 @@
 class Humano
   def camina
-    puts "esta caminano"
+    puts "esta caminando"
   end
 
   def corre

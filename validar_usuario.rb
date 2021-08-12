@@ -28,7 +28,7 @@ class Nombre
 end
 
 myName = Nombre.new
-myName.cambiar_nombre "Andres pacheco"
+myName.cambiar_nombre " pacheco"
 myName.define_edad 17
 myName.muestra_los_datos
 myName.comprueba_edad 
